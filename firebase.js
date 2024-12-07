@@ -73,12 +73,11 @@ function signup() {
 }
 
 // Function to write user data to Firestore
-async function writeData(name, email, role) {
+async function writeData(name, email) {
   try {
     const docRef = await addDoc(collection(db, "users"), {
       name,
       email,
-      role
     });
     console.log("Document written with ID:", docRef.id);
   } catch (error) {

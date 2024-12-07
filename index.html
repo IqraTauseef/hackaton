@@ -26,8 +26,8 @@
             <input type="text" placeholder="search...">
             <button><i class="fas fa-search"></i></button>
         </div>
-        <div class="get-started">
-            <button>Get Started <i class="fas fa-arrow-right"></i></button>
+        <div class="create-post">
+            <button id="create-post-btn">Create a Post</button>
         </div>
     </header>
 
@@ -69,16 +69,20 @@
     <div class="modal" id="post-modal">
         <div class="modal-content">
             <h3>Create a Post</h3>
-            <input type="text" id="post-title" placeholder="Post Title">
+            <!-- <input type="text" id="post-title" placeholder="Post Title">
             <input type="text" id="post-description" placeholder="Post Description">
             <textarea id="post-details" placeholder="Enter details"></textarea>
-            <button onclick="submitPost()">Create</button>
+            <button id="postadd" onclick="submitPost()">Create</button> -->
+            <input type="text" id="post-user" placeholder="Enter your Name" />
+            <input type="text" id="post-title" placeholder="Post Title" />
+<input type="text" id="post-description" placeholder="Post Description" />
+<textarea id="post-details" placeholder="Enter details"></textarea>
+<button id="postadd" onclick="submitPost()">Create</button>
+
         </div>
     </div>
 
-    <div class="create-post">
-        <button id="create-post-btn">Create a Post</button>
-    </div>
+    
 
     <!-- Post details modal -->
     <div class="modal" id="details-modal">

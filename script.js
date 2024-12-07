@@ -27,6 +27,7 @@ function authenticate() {
 
 // Create a post
 function submitPost() {
+    
     const title = document.getElementById('post-title').value;
     const description = document.getElementById('post-description').value;
     const details = document.getElementById('post-details').value;

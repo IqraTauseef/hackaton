@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/20x20/007bff/FFFFFF?text=O" alt="logo">
+            <span>Coranu</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Market</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Career <span class="hiring">hiring</span></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="get-started">
+            <button>Get Started <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Section from the provided code -->
+    <main>
+        <div class="content">
+            <aside>
+                <h3>Blog Topics</h3>
+                <ul>
+                    <li>Company</li>
+                    <li>Design</li>
+                    <li>Technology</li>
+                    <li>Crypto</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Work</li>
+                </ul>
+            </aside>
+            <section class="articles">
+                <div id="blog-posts">
+                    <h3>Trending Topics</h3>
+                    <!-- Blog posts will be dynamically added here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal for sign up -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-content">
+            <h3>Sign Up</h3>
+            <input type="text" id="username" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button onclick="authenticate()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Modal for creating post -->
+    <div class="modal" id="post-modal">
+        <div class="modal-content">
+            <h3>Create a Post</h3>
+            <input type="text" id="post-title" placeholder="Post Title">
+            <input type="text" id="post-description" placeholder="Post Description">
+            <textarea id="post-details" placeholder="Enter details"></textarea>
+            <button onclick="submitPost()">Create</button>
+        </div>
+    </div>
+
+    <div class="create-post">
+        <button id="create-post-btn">Create a Post</button>
+    </div>
+
+    <!-- Post details modal -->
+    <div class="modal" id="details-modal">
+        <div class="modal-content">
+            <h3 id="detail-title"></h3>
+            <p id="detail-description"></p>
+            <p id="detail-details"></p>
+            <button onclick="closeDetails()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
